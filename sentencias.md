@@ -9,3 +9,13 @@ WHERE category = 'Computers'
   ```
   - Captura:
 <img src="./capturas/1.png"/>
+
+## 2. Contar el número de clientes en una ciudad específica.
+  - Sentencia:
+  ```
+SELECT COUNT (*) AS clients_total_NewYork
+FROM client
+WHERE city = 'New York'
+  ```
+  - Captura:
+<img src="./capturas/2.png"/>
