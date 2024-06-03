@@ -44,8 +44,38 @@ WHERE city = 'New York' AND type_of_client = 'BASIC'
   - Sentencia:
   ```
 SELECT *
-FROM client
-WHERE city = 'New York' AND type_of_client = 'BASIC'
+FROM product
+WHERE category = 'Mobile Phones' AND price > 500
   ```
   - Captura:
 <img src="./capturas/5.png"/>
+
+## 6. Seleccionar productos que fueron producidos en un año específico y en un país de origen específico
+  - Sentencia:
+  ```
+SELECT *
+FROM product
+WHERE year_of_production = 2021 AND country_of_origin = 'USA'
+  ```
+  - Captura:
+<img src="./capturas/6.png"/>
+
+## 7. Seleccionar clientes cuyo nombre completo comience con 'J'.
+  - Sentencia:
+  ```
+SELECT *
+FROM client
+WHERE fullname LIKE 'J%'
+  ```
+  - Captura:
+<img src="./capturas/7.png"/>
+
+## 8. Seleccionar clientes cuya ciudad contenga la letra 'a'
+  - Sentencia:
+  ```
+SELECT *
+FROM client
+WHERE fullname LIKE '%a%'
+  ```
+  - Captura:
+<img src="./capturas/8.png"/>
